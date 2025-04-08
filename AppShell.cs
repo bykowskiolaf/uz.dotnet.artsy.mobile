@@ -7,7 +7,7 @@ namespace artsy.mobile
 		public AppShell()
 		{
 			FlyoutBehavior = FlyoutBehavior.Flyout;
-			Title = "artsy.mobile";
+			Title = "Artsy";
 
 			// Add MainPage as a ShellContent
 			Items.Add(new ShellContent

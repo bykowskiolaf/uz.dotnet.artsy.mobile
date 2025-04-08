@@ -20,14 +20,12 @@ namespace artsy.mobile
 			var headline = new Label
 			{
 				Text = "Hello, World!",
-				Style = (Style)Application.Current.Resources["Headline"]
 			};
 			SemanticProperties.SetHeadingLevel(headline, SemanticHeadingLevel.Level1);
 
 			var subHeadline = new Label
 			{
 				Text = "Welcome to \n.NET Multi-platform App UI",
-				Style = (Style)Application.Current.Resources["SubHeadline"]
 			};
 			SemanticProperties.SetHeadingLevel(subHeadline, SemanticHeadingLevel.Level2);
 			SemanticProperties.SetDescription(subHeadline, "Welcome to dot net Multi platform App U I");
