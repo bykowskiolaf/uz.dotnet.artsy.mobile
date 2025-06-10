@@ -42,12 +42,12 @@
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-      <CodesignKey>iPhone Developer</CodesignKey>
+        <CodesignKey>iPhone Developer</CodesignKey>
     </PropertyGroup>
 
     <ItemGroup>
         <!-- App Icon -->
-        <MauiIcon Include="Resources\AppIcon\appicon.svg" Color="#2B2B2B" />
+        <MauiIcon Include="Resources\AppIcon\appicon.svg" Color="#2B2B2B"/>
 
         <!-- Splash Screen -->
         <MauiSplashScreen Include="Resources\AppIcon\artsy_logo_with_subheader_dark.svg" Color="#2B2B2B" BaseSize="400,400"/>
@@ -63,8 +63,11 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0"/>
+        <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.5"/>
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0"/>
+        <PackageReference Include="System.Net.Http.Json" Version="9.0.5"/>
     </ItemGroup>
 
 </Project>
