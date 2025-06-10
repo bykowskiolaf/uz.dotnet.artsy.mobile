@@ -15,23 +15,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09518947-eeb6-4444-8d0b-76638b5d516d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Resources/Splash/artsy-logo-with-subheader-dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Styles/Colors.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Styles/Styles.xaml.cs" afterDir="false" />
+    <list default="true" id="09518947-eeb6-4444-8d0b-76638b5d516d" name="Changes" comment="feat(Login)">
+      <change afterPath="$PROJECT_DIR$/Platforms/Android/Resources/xml/network_security_config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MauiProgram.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Artwork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/LoginSuccessResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/ApiClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Artwork/ArtworkService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Artwork/IArtworkService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Auth/AuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Auth/IAuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ViewModels/ArtworksViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ViewModels/BaseViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ViewModels/LoginViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Views/ArtworksPage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Views/ArtworksPage.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Views/LoginPage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Views/LoginPage.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.artsy.mobile/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.artsy.mobile/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.artsy.mobile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.artsy.mobile/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppShell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppShell.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainPage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/iOS/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Platforms/iOS/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/iOS/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Platforms/iOS/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/AppIcon/appicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/AppIcon/appiconfg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Splash/splash.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Styles/Colors.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Styles/Styles.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Styles/Styles.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppShell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppShell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainPage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiProgram.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/Android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Platforms/Android/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artsy.mobile.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/artsy.mobile.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,14 +47,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="XML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/App.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/AppShell.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MainPage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MauiProgram.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/.dotnet/packs/Microsoft.iOS.Sdk.net9.0_18.2/18.2.9180/tools/msbuild/Xamarin.Shared.targets" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Platforms/Android/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Platforms/MacCatalyst/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Platforms/iOS/AppDelegate.cs" root0="SKIP_HIGHLIGHTING" />
@@ -54,6 +66,9 @@
     <setting file="file://$PROJECT_DIR$/Resources/Styles/Styles.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Resources/Styles/Styles.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/net9.0-android/artsy.mobile.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AppShell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/MauiProgram.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -66,13 +81,16 @@
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2vP3E54VBKUHFQU2GJacq8dnSGw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -87,16 +105,18 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;iOS.artsy.mobile.executor&quot;: &quot;Run&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bykowski/Projects/UZ/DotNet/Artsy/artsy.mobile&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;,
+    &quot;rider.code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Android.artsy.mobile">
+  <component name="RunManager" selected="iOS.artsy.mobile">
     <configuration name="artsy.mobile: Windows Machine" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/artsy.mobile.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0-android" />
@@ -154,7 +174,13 @@
       <workItem from="1744061656670" duration="81000" />
       <workItem from="1744061752166" duration="2508000" />
       <workItem from="1744101373495" duration="1141000" />
-      <workItem from="1744109553115" duration="1109000" />
+      <workItem from="1744109553115" duration="2086000" />
+      <workItem from="1744145376667" duration="657000" />
+      <workItem from="1745755638281" duration="76000" />
+      <workItem from="1749417141515" duration="3665000" />
+      <workItem from="1749451293921" duration="168000" />
+      <workItem from="1749481857506" duration="3801000" />
+      <workItem from="1749568962370" duration="1501000" />
     </task>
     <task id="LOCAL-00001" summary="moved xaml files to .cs files for easier maintenance">
       <option name="closed" value="true" />
@@ -179,9 +205,20 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint enabled="true" type="DotNet Exception Breakpoints" />
-      </default-breakpoints>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">

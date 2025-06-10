@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="artsy.mobile.Views.LoginPage"
+             Title="{Binding Title}"
+             Shell.FlyoutBehavior="Disabled">
+    <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+        <Label Text="Welcome to Artsy" FontSize="Header" HorizontalOptions="Center" />
+
+        <Entry Placeholder="Email" Text="{Binding Email}" Keyboard="Email" />
+        <Entry Placeholder="Password" Text="{Binding Password}" IsPassword="True" />
+
+        <Button Text="Login" Command="{Binding LoginCommand}" IsEnabled="{Binding IsNotBusy}" />
+
+        <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
