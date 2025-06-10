@@ -15,32 +15,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09518947-eeb6-4444-8d0b-76638b5d516d" name="Changes" comment="feat(Login)">
-      <change afterPath="$PROJECT_DIR$/Platforms/Android/Resources/xml/network_security_config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MauiProgram.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Artwork.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/LoginSuccessResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/ApiClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Artwork/ArtworkService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Artwork/IArtworkService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Auth/AuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Auth/IAuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ViewModels/ArtworksViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ViewModels/BaseViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ViewModels/LoginViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/ArtworksPage.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/ArtworksPage.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/LoginPage.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/LoginPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.artsy.mobile/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.artsy.mobile/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="09518947-eeb6-4444-8d0b-76638b5d516d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Models/Artist.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Artist/ArtistService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Artist/IArtistService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ViewModels/ArtistsViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Views/ArtistsPage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Views/ArtistsPage.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.artsy.mobile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.artsy.mobile/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppShell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppShell.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainPage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MauiProgram.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/Android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Platforms/Android/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artsy.mobile.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/artsy.mobile.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppShell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppShell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MauiProgram.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MauiProgram.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +44,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/.dotnet/packs/Microsoft.iOS.Sdk.net9.0_18.2/18.2.9180/tools/msbuild/Xamarin.Shared.targets" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Platforms/Android/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Platforms/MacCatalyst/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Platforms/MacCatalyst/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Platforms/iOS/AppDelegate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Platforms/iOS/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Resources/Styles/Styles.xaml" root0="FORCE_HIGHLIGHTING" />
@@ -116,7 +100,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="iOS.artsy.mobile">
+  <component name="RunManager" selected="Android.artsy.mobile">
     <configuration name="artsy.mobile: Windows Machine" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/artsy.mobile.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0-android" />
@@ -180,7 +164,7 @@
       <workItem from="1749417141515" duration="3665000" />
       <workItem from="1749451293921" duration="168000" />
       <workItem from="1749481857506" duration="3801000" />
-      <workItem from="1749568962370" duration="1501000" />
+      <workItem from="1749568962370" duration="2568000" />
     </task>
     <task id="LOCAL-00001" summary="moved xaml files to .cs files for easier maintenance">
       <option name="closed" value="true" />
@@ -190,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744043013522</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat(Login): added necessary login and auth logic">
+      <option name="closed" value="true" />
+      <created>1749571599806</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749571599806</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat(Artworks): Added artworks page with fetching">
+      <option name="closed" value="true" />
+      <created>1749571668250</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749571668250</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +201,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="moved xaml files to .cs files for easier maintenance" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved xaml files to .cs files for easier maintenance" />
+    <MESSAGE value="feat(Login): added necessary login and auth logic" />
+    <MESSAGE value="feat(Artworks): Added artworks page with fetching" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Artworks): Added artworks page with fetching" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

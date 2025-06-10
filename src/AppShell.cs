@@ -29,6 +29,13 @@ public class AppShell : Shell
 					Title = "Artworks",
 					ContentTemplate = new DataTemplate(typeof(ArtworksPage)),
 					Route = nameof(ArtworksPage)
+				},
+				new ShellContent
+				{
+					Icon = "dotnet_bot.png", // To-do: use an icon for artists
+					Title = "Artists",
+					ContentTemplate = new DataTemplate(typeof(ArtistsPage)),
+					Route = nameof(ArtistsPage)
 				}
 			}
 		};

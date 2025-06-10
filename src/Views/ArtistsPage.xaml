@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="artsy.mobile.Views.ArtistsPage"
+             xmlns:vm="clr-namespace:artsy.mobile.ViewModels"
+             xmlns:model="clr-namespace:artsy.mobile.Models"
+             x:DataType="vm:ArtistsViewModel"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <Grid>
+            <RefreshView Command="{Binding GetArtistsCommand}"
+                         IsRefreshing="{Binding IsBusy}">
+                <CollectionView ItemsSource="{Binding Artists}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Artist">
+                            <Frame Padding="10" Margin="10,5" CornerRadius="8" BorderColor="LightGray" HasShadow="True">
+                                <Grid ColumnDefinitions="Auto, *">
+                                    <!-- Artist Thumbnail -->
+                                    <Image Grid.Column="0"
+                                           Source="{Binding ThumbnailUrl}"
+                                           Aspect="AspectFill"
+                                           HeightRequest="60"
+                                           WidthRequest="60"
+                                           BackgroundColor="LightGray"
+                                           VerticalOptions="Center" />
+
+                                    <!-- Artist Info -->
+                                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="2"
+                                                         Padding="10,0,0,0">
+                                        <Label Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold" />
+                                        <Label Text="{Binding Nationality}" FontSize="Small" TextColor="Gray" />
+                                        <Label Text="{Binding LifeTime}" FontSize="Small" TextColor="Gray" />
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+
+            <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"
+                               HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

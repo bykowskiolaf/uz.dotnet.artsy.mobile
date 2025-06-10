@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using artsy.mobile.Services;
+using artsy.mobile.Services.Artist;
 using artsy.mobile.Services.Artwork;
 using artsy.mobile.Services.Auth;
 using artsy.mobile.ViewModels;
@@ -42,6 +43,7 @@ public static class MauiProgram
 		// Register Services
 		builder.Services.AddSingleton<IAuthService, AuthService>();
 		builder.Services.AddSingleton<IArtworkService, ArtworkService>();
+		builder.Services.AddSingleton<IArtistService, ArtistService>();
 
 		// Register Views and ViewModels
 		builder.Services.AddSingleton<LoginPage>();
@@ -49,6 +51,9 @@ public static class MauiProgram
 
 		builder.Services.AddSingleton<ArtworksPage>();
 		builder.Services.AddSingleton<ArtworksViewModel>();
+
+		builder.Services.AddSingleton<ArtistsPage>();
+		builder.Services.AddSingleton<ArtistsViewModel>();
 
 		return builder.Build();
 	}
