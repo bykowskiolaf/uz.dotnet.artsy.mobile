@@ -5,12 +5,14 @@
              x:Class="artsy.mobile.Views.ArtworksPage"
              xmlns:model="clr-namespace:artsy.mobile.Models"
              Title="{Binding Title}">
-
     <Grid RowDefinitions="*, Auto">
         <RefreshView Grid.Row="0"
                      Command="{Binding GetArtworksCommand}"
-                     IsRefreshing="{Binding IsBusy}">
-            <CollectionView ItemsSource="{Binding Artworks}">
+                     IsRefreshing="{Binding IsBusy}"
+                     x:Name="ArtworksRefreshView">
+
+            <CollectionView ItemsSource="{Binding Artworks}"
+                            x:Name="ArtworksCollectionView">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Artwork">
                         <Frame Padding="10" Margin="10" CornerRadius="10" BorderColor="LightGray">
@@ -18,9 +20,17 @@
                                 <Image Source="{Binding ImageUrl}"
                                        Aspect="AspectFill"
                                        HeightRequest="200"
-                                       BackgroundColor="LightGray" />
-                                <Label Text="{Binding Title}" FontSize="Medium" FontAttributes="Bold" />
-                                <Label Text="{Binding ArtistName}" FontSize="Small" />
+                                       BackgroundColor="LightGray"
+                                       x:Name="ArtworkImage" />
+
+                                <Label Text="{Binding Title}"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       x:Name="ArtworkTitleLabel" />
+
+                                <Label Text="{Binding ArtistName}"
+                                       FontSize="Small"
+                                       x:Name="ArtworkArtistLabel" />
                             </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>
