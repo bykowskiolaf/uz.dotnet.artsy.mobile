@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="artsy.mobile.Views.ArtworksPage"
@@ -9,10 +7,11 @@
         <RefreshView Grid.Row="0"
                      Command="{Binding GetArtworksCommand}"
                      IsRefreshing="{Binding IsBusy}"
-                     x:Name="ArtworksRefreshView">
-
+                     x:Name="ArtworksRefreshView"
+                     AutomationProperties.Name="ArtworksRefreshView">
             <CollectionView ItemsSource="{Binding Artworks}"
-                            x:Name="ArtworksCollectionView">
+                            x:Name="ArtworksCollectionView"
+                            AutomationProperties.Name="ArtworksCollectionView">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Artwork">
                         <Frame Padding="10" Margin="10" CornerRadius="10" BorderColor="LightGray">
@@ -21,16 +20,17 @@
                                        Aspect="AspectFill"
                                        HeightRequest="200"
                                        BackgroundColor="LightGray"
-                                       x:Name="ArtworkImage" />
-
+                                       x:Name="ArtworkImage"
+                                       AutomationProperties.Name="ArtworkImage" />
                                 <Label Text="{Binding Title}"
                                        FontSize="Medium"
                                        FontAttributes="Bold"
-                                       x:Name="ArtworkTitleLabel" />
-
+                                       x:Name="ArtworkTitleLabel"
+                                       AutomationProperties.Name="ArtworkTitleLabel" />
                                 <Label Text="{Binding ArtistName}"
                                        FontSize="Small"
-                                       x:Name="ArtworkArtistLabel" />
+                                       x:Name="ArtworkArtistLabel"
+                                       AutomationProperties.Name="ArtworkArtistLabel" />
                             </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>
