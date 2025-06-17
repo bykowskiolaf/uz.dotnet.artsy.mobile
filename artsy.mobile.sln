@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "artsy.mobile", "artsy.mobile.csproj", "{DFF5070E-4FA9-4D53-85C7-137F47127ABF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "artsy.mobile", "artsy.mobile/artsy.mobile.csproj", "{DFF5070E-4FA9-4D53-85C7-137F47127ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "artsyTests", "artsyTests\artsyTests.csproj", "{6D94DC2B-963D-413B-BA17-10E43732E2FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +14,9 @@ Global
 		{DFF5070E-4FA9-4D53-85C7-137F47127ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFF5070E-4FA9-4D53-85C7-137F47127ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFF5070E-4FA9-4D53-85C7-137F47127ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D94DC2B-963D-413B-BA17-10E43732E2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D94DC2B-963D-413B-BA17-10E43732E2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D94DC2B-963D-413B-BA17-10E43732E2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D94DC2B-963D-413B-BA17-10E43732E2FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
